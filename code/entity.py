@@ -1,20 +1,17 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import pygame as pg
 
-class Entity:
-    def __init__(self):
-        self.name = None
-        self.surf = None
-        self.rect = None
+from abc import ABC, abstractmethod
 
-    def name(self, ):
-        pass
 
-    def surf(self, ):
-        pass
+class Entity(ABC):
+    def __init__(self, name: str, position: tuple):
+        self.name = name
+        self.surf = pg.image.load('./assets/' + name + '.png')
+        self.rect = self.surf.get_rect(left=position[0], top=position[1])
+        self.speed = 0
 
-    def rect(self, ):
-        pass
-
+    @abstractmethod
     def move(self, ):
         pass
