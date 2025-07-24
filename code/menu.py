@@ -11,7 +11,7 @@ from code.const import WIN_WIDTH, COLOR_ORANGE, MENU_OPTION, COLOR_WHITE, COLOR_
 class Menu:
     def __init__(self, window):
         self.window = window
-        self.surf = pg.image.load('./assets/menuBg.png')
+        self.surf = pg.image.load('./assets/menuBg.png').convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 
     def run(self, ):
