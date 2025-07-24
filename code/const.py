@@ -17,9 +17,20 @@ ENTITY_SPEED = {
     'level1Bg3': 3,
     'level1Bg4': 4,
     'player1': 3,
+    'player1Shot': 4,
     'player2': 3,
-    'enemy1': 2,
+    'player2Shot': 4,
+    'enemy1': 1,
+    'enemy1Shot': 5,
     'enemy2': 1,
+    'enemy2Shot': 2,
+}
+
+ENTITY_SHOT_DELAY = {
+    'player1': 10,
+    'player2': 10,
+    'enemy1': 100,
+    'enemy2': 200,
 }
 
 # H
@@ -30,13 +41,13 @@ ENTITY_HEALTH = {
     'level1Bg3': 999,
     'level1Bg4': 999,
     'player1': 300,
-    #'player1Shot': 1,
+    'player1Shot': 1,
     'player2': 300,
-    #'player2Shot': 1,
+    'player2Shot': 1,
     'enemy1': 50,
-    #'enemy1Shot': 1,
+    'enemy1Shot': 1,
     'enemy2': 60,
-    #'enemy2Shot': 1,
+    'enemy2Shot': 1,
 }
 
 # M
@@ -58,7 +69,7 @@ PLAYER_KEY_SHOOT = {'player1': pg.K_RCTRL,
                     'player2': pg.K_LCTRL}
 
 # S
-SPAWN_TIME = 4000
+SPAWN_TIME = 3000
 
 # W
 WIN_WIDTH = 576
