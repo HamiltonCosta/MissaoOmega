@@ -1,11 +1,12 @@
 import pygame as pg
 
 # C
-COLOR_ORANGE = (255, 128, 0)
-COLOR_WHITE = (255, 255, 255)
-COLOR_BLACK = (0, 0, 0)
-COLOR_GREEN = (0, 255, 0)
-COLOR_YELLOW = (255, 255, 0)
+C_ORANGE = (255, 128, 0)
+C_WHITE = (255, 255, 255)
+C_BLACK = (0, 0, 0)
+C_GREEN = (0, 255, 0)
+C_YELLOW = (255, 255, 0)
+C_CYAN = (0, 128, 128)
 
 # E
 EVENT_ENEMY = pg.USEREVENT + 1
@@ -33,7 +34,7 @@ ENTITY_SHOT_DELAY = {
     'enemy2': 200,
 }
 
-# H
+
 ENTITY_HEALTH = {
     'level1Bg0': 999,
     'level1Bg1': 999,
@@ -50,6 +51,37 @@ ENTITY_HEALTH = {
     'enemy2Shot': 1,
 }
 
+ENTITY_DAMAGE = {
+    'level1Bg0': 0,
+    'level1Bg1': 0,
+    'level1Bg2': 0,
+    'level1Bg3': 0,
+    'level1Bg4': 0,
+    'player1': 1,
+    'player1Shot': 25,
+    'player2': 1,
+    'player2Shot': 25,
+    'enemy1': 1,
+    'enemy1Shot': 20,
+    'enemy2': 1,
+    'enemy2Shot': 20,
+}
+
+ENTITY_SCORE = {
+    'level1Bg0': 0,
+    'level1Bg1': 0,
+    'level1Bg2': 0,
+    'level1Bg3': 0,
+    'level1Bg4': 0,
+    'player1': 0,
+    'player1Shot': 0,
+    'player2': 0,
+    'player2Shot': 0,
+    'enemy1': 100,
+    'enemy1Shot': 0,
+    'enemy2': 100,
+    'enemy2Shot': 0,
+}
 # M
 MENU_OPTION = ('NEW GAME 1P',
                'NEW GAME 2P',
@@ -70,6 +102,8 @@ PLAYER_KEY_SHOOT = {'player1': pg.K_RCTRL,
 
 # S
 SPAWN_TIME = 3000
+
+
 
 # W
 WIN_WIDTH = 576
